@@ -1,0 +1,74 @@
+body {
+    background-color: darkblue
+}
+
+h1 {
+    color:wheat;
+    font-family: impact;
+    font-size:44px
+}
+.flex-container {
+    display:flex;
+    justify-content:center
+
+}
+
+#header {
+   align-items: center;
+   flex-direction: column;
+}
+
+#gameStatus, #instruction-box , .level-box{
+    border-style:solid;
+    border-width:1px;
+    border-color:wheat;
+    border-radius: 10px;
+    background-color: orangered;
+    color:wheat;
+    padding:5px
+}
+
+#info-box{
+    justify-content: space-evenly;
+    
+}
+
+.bluebox {
+    height:75px;
+    width:75px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: whitesmoke;
+    border-radius: 10px;
+    background-color: blue;
+    justify-content:center;
+    align-items: center;
+    margin:10px;
+    padding:auto;
+    flex-direction:column;
+    font-family: Impact;
+    font-size: 24px;
+    color:wheat
+ }
+
+ button {
+     
+     font-size:20px;
+     background-color: red;
+     color:white
+ }
+
+ #gameStatus {}
+
+ .spinjitsu {
+-webkit-animation: rotation 1s linear;
+}
+
+@-webkit-keyframes rotation {
+from {
+        -webkit-transform: rotate(0deg);
+}
+to {
+        -webkit-transform: rotate(360deg);
+}
+}
