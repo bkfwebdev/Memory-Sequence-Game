@@ -104,7 +104,7 @@ document.getElementById("restart-game-button").addEventListener("click", () => {
  
 // update game status
 function updateGameStatus(){
-    document.getElementById("gameStatus").innerHTML = `Game Level: ${level}  Sequnce Length: ${sequenceLength}`
+    document.getElementById("gameStatus").innerHTML = `Game Level:${level} Sequence Length:${sequenceLength}`
 }
 
 
