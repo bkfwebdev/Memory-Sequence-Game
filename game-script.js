@@ -8,7 +8,7 @@ let level = 1;
 function showSelected(index) {
 
     let target = index.toString();
-    var f = document.getElementById(target);
+    let f = document.getElementById(target);
     f.style.backgroundColor = "red";
     setTimeout(() => setToBlue(f), 1000);
 }
@@ -27,7 +27,7 @@ function spinIt(target) {
 function updateCorrect() {
     let targetScore = document.getElementById("correct");
     userScore = userScore + 1;
-    targetScore.innerHTML = "Correct:" + userScore.toString();
+    targetScore.innerHTML = `Correct: ${userScore}`;
     spinIt(targetScore);
 }
 
@@ -35,7 +35,7 @@ function updateIncorrect() {
     alert("incorrect sequence input, click button to try a new sequence");
     let targetScore = document.getElementById("incorrect");
     computerScore = computerScore + 1;
-    targetScore.innerHTML = "Incorrect:" + computerScore.toString();
+    targetScore.innerHTML = `Incorrect : ${computerScore}`;
     spinIt(targetScore);
     
 }
@@ -87,8 +87,8 @@ function showSequence(sequenceArray) {
 }
 
 // set up user click event
-var screengrab = document.getElementsByClassName("gamebox");
-var limit = screengrab.length;
+let screengrab = document.getElementsByClassName("gamebox");
+let limit = screengrab.length;
 for (let x = 0; x < limit; x++) {
     screengrab[x].onclick = getClickCallback(x)
 };
